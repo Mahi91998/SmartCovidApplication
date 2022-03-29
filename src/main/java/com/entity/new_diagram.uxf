@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>55</x>
+      <y>60</y>
+      <w>155</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>com.entity::Patient
+--
+-pid: int
+-name: String
+-mobileNo: String
+-address: String
+-appoinement: Appointment
+-doctor: Doctor
+-date: String
+-symptoms: String
+-email: String
+--
++getSymptoms(): String
++setSymptoms(String symptoms): void
++getPid(): int
++setPid(int pid): void
++getName(): String
++setName(String name): void
++getMobileNo(): String
++setMobileNo(String mobileNo): void
++getAddress(): String
++setAddress(String address): void
++getDate(): String
++setDate(String date): void
++getPid1(): int
++getEmail(): String
++setEmail(String email): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>45</y>
+      <w>170</w>
+      <h>205</h>
+    </coordinates>
+    <panel_attributes>com.entity::Doctor
+--
+-doctorID: int
+-doctorName: String
+-leaveDay: String
+-doctorSpecialization: String
+-email: String
+-mobile: String
+-patient: Patient
+--
++getPatient(): Patient
++setPatient(Patient patient): void
++getEmail(): String
++setEmail(String email): void
++getMobile(): String
++setMobile(String mobile): void
++getDoctorID(): int
++setDoctorID(int doctorID): void
++getDoctorName(): String
++setDoctorName(String doctorName): void
++getLeaveDay(): String
++setLeaveDay(String leaveDay): void
++getDoctorSpecialist(): String
++setDoctorSpecialist(String doctorSpecialist): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>75</y>
+      <w>290</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>com.entity::Admin
+--
+-adminId: int
+-adminUsername: String
+-password: String
+-adminMail: String
+--
++Admin(): ctor
++Admin(int adminId, String adminUsername, String adminAdress, String adminMail): ctor
++getAdminId(): int
++setAdminId(int adminId): void
++getadminUsername(): String
++getPassword(): String
++setPassword(String password): void
++setadminUsername(String adminUsername): void
++getAdminMail(): String
++setAdminMail(String adminMail): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>255</x>
+      <y>280</y>
+      <w>90</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>com.entity::Appointment
+--
+-aid: int
+-date: String
+-time: String
+--
++getAid(): int
++setAid(int aid): void
++getDate(): String
++setDate(String date): void
++getTime(): String
++setTime(String time): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
